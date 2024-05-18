@@ -1,0 +1,30 @@
+@model DegreeModel;
+
+@{
+    ViewData["Title"] = "Listado de Carreras";
+
+    DateTime fecha=new DateTime(2024,05,17);
+    DateTime FechaCreacionn = new DateTime(2024, 05,20);
+}
+
+<h2>@DateTime.Now </h2>
+<i> @fecha.ToLongDateString()</i>
+
+<center>
+    <b><h1 class="display-2"> Listado de Carreras</h1></b></h1>
+    <br>
+    <br>
+    <h3><b>@Model.NombreCarrer2</b> La da el maestro <b>@Model.NombreT</b> El dia de <b>@FechaCreacionn</b></h3>
+    <br>
+    <h3><b>@Model.NombreCarrer</b> La da el maestro <b>@Model.NombreT2</b> El dia de <b>@FechaCreacionn</b></h3>
+    <br>
+    <img src="~/img/Carrer.jpg" width="800" height="500">
+    <br><br>
+    <label> Esto es una prueba</label>
+</center>
+
+
+<div class="text-center">
+    @*<h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
